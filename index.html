@@ -27,8 +27,11 @@
     <section class="text-start">
         <div class="container">
             <div class="row mb-5 site-section">
-                <div class="col-lg-7">
-                    <img src="Resources/whats_sps.png" alt="#" class="img-fluid mb-5">
+                <div class="col-lg-7 position-relative ">
+                    <img onclick="playVideo()" src="Resources/whats_sps.png" alt="#" class="img-fluid mb-5">
+                    <div class="col-lg-7 col-sm-12 position-absolute ratio ratio-16x9" style="width: 96%;top: 20px;left: 8px;">
+                        <iframe style="width: 96%; height: 96%;" src="https://www.youtube.com/embed/I9QGnNvrmoY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
                 </div>
                 <div class="col-lg-5 ps-lg-5 ms-auto mt-md-5 pe-lg-5 text-black text_head">
                     <h2>No Tuition Fee Upfront,<br>Pay Only When You Earn.</h2>
@@ -51,7 +54,7 @@
             </div>
             <div class="row align-items-sm-stretch g-4">
                 <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
-                    <div class="card">
+                    <div class="card c_1">
                         <div class="card-body m-3">
                             <span class="mb-3">
                                 <i class="fas fa-users"></i>
@@ -62,7 +65,7 @@
                       </div>
                 </div>
                 <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
-                    <div class="card">
+                    <div class="card c_1">
                         <div class="card-body m-3">
                             <span class="mb-3">
                                 <i class="fas fa-graduation-cap"></i>
@@ -73,7 +76,7 @@
                       </div>
                 </div>
                 <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
-                    <div class="card">
+                    <div class="card c_1">
                         <div class="card-body m-3">
                             <span class="mb-3">
                                 <i class="fas fa-book"></i>
@@ -108,32 +111,173 @@
                       </p>
                 </div>
             </div> 
-            <div class="row pt-5 mb-5 site-section">
+            <div class="row pt-5 mb-5">
                 <div class="col-lg-12 text_head">
                     <h2 class="pb-3 pt-2 border-bottom mb-5 text-black">Life at SPS</h2>
                     <p>SPS is built on 3 principles i.e Open Material Education, Self Learning and Peer to peer Learning</p>
                 </div>
                 <div class="row pt-5 mb-5 site-section">
                     <div class="row d-flex align-items-center">
-                        <div class="col-2 text-center bottom d-inline-flex justify-content-center align-items-center circle_span">
-                            <span class="p-3">1</span>
+                        <div class="col-2 text-center bottom d-inline-flex justify-content-center align-items-center ">
+                            <div class=" circle_span p-3">1</div>
                         </div>
                         <div class="col-6">
                             <h5 class="text-black">The Ignition</h5>
                             <p>Learn all the fundamentals of programming(0-30 days).</p>
-                          </div>
+                        </div>
                     </div>
                     <div class="row line">
                         <div class="col-2">
-                                        
+                            <div class="curve-left"></div>     
                         </div>
-                        <div class="col-8">
-
+                        <div class="col-8 p-0">
+                            <div class="h_line"></div>
                         </div>
                         <div class="col-2">
-                            
+                            <div class="curve-right"></div>
                         </div>
                     </div>
+                    <div class="row d-flex justify-content-end align-items-center">
+                        <div class="col-6 text-end">
+                            <h5 class="text-black">The Acceleration</h5>
+                            <p>During this period you will dive deep into various aspects of your domain (31-90 days).</p>
+                        </div>
+                        <div class="col-2 text-center bottom d-inline-flex justify-content-center align-items-center circle_div">
+                            <div class="circle_span p-3">2</div>
+                        </div>
+                    </div>
+                    <div class="row line">
+                        <div class="col-2">
+                            <div class="curve2-left"></div>     
+                        </div>
+                        <div class="col-8 p-0">
+                            <div class="h2_line"></div>
+                        </div>
+                        <div class="col-2">
+                            <div class="curve2-right"></div>
+                        </div>
+                    </div>
+                    <div class="row d-flex align-items-center">
+                        <div class="col-2 text-center bottom d-inline-flex justify-content-center align-items-center circle_div">
+                            <div class="circle_span p-3">3</div>
+                        </div>
+                        <div class="col-6">
+                            <h5 class="text-black">And the Race</h5>
+                            <p>You will launch as many live projects as possible(91-180 days).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Domains -->
+    <section class="pt-3 bg-light">
+        <div class="container">
+            <div class="row mb-5 align-items-stretch">
+                <div class="col-12 text-center">
+                    <h2 class="mb-5 text_head_new text-md-start">What Domains You Can Choose</h2>
+                </div>
+                <div class="col-md-6 col-lg-6 mb-4 mb-lg-4">
+                    <div class="card c_2">
+                        <div class="card-body m-3">
+                            <h3>Web Development</h3>
+                            <p>in Python / Node.js / PHP / .Net / Java / Go / Ruby</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 mb-4 mb-lg-4">
+                    <div class="card c_2">
+                        <div class="card-body m-3">
+                            <h3>Web Development</h3>
+                            <p>In Kotlin Android / iOS / Flutter / React - Native</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 mb-4 mb-lg-4">
+                    <div class="card c_2">
+                        <div class="card-body m-3">
+                            <h3>Cyber Security</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 mb-4 mb-lg-4">
+                    <div class="card c_2">
+                        <div class="card-body m-3">
+                            <h3>Artificial Intelligence</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 mb-4 mb-lg-4">
+                    <div class="card c_2">
+                        <div class="card-body m-3">
+                            <h3>Machine Learning</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 mb-4 mb-lg-4">
+                    <div class="card c_2">
+                        <div class="card-body m-3">
+                            <h3>Data Science</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 mb-4 mb-lg-4">
+                    <div class="card c_2">
+                        <div class="card-body m-3">
+                            <h3>BlockChain</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 mb-4 mb-lg-4">
+                    <div class="card c_2">
+                        <div class="card-body m-3">
+                            <h3>Augmented Reality/Virtual Reality</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 mb-4 mb-lg-4">
+                    <div class="card c_2">
+                        <div class="card-body m-3">
+                            <h3>Software Testing</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 mb-4 mb-lg-4">
+                    <div class="card c_2">
+                        <div class="card-body m-3">
+                            <h3>DevOps</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Who Can Join SPS -->
+    <section>
+        <div class="container">
+            <div class="row pt-5 mb-5">
+                <div class="col-lg-12 text_head">
+                    <h2 class="pb-3 pt-2 border-bottom mb-5 text-black ">Want to join SPS? </h2>
+                </div>
+                <div class="col-12">
+                    <img src="Resources/whocanjoinsps.png" alt="#" class="img-fluid">
+                </div>
+                <p>3 step process to join the SPS</p>
+                <p>If you failed to qualify the interview, then prepare well, schedule it again and repeat the process until you win.</p>
+                <div class="col-12">
+                    <img src="Resources/howmuchdoesitcost.png" alt="#" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="pt-3">
+        <div class="container">
+            <div class="row">
+                <div class="text_head">
+                    <h2 class="pb-3 pt-2 border-bottom mb-5 text-black">Convocation</h2>
+                </div>
+                <div class="col-12">
+                    <img src="Resources/ConvocationCeremony.png" alt="#" class="img-fluid">
                 </div>
             </div>
         </div>

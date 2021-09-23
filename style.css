@@ -33,6 +33,13 @@ h1, h2, h3, h4, h5,
     font-weight: 900;
     margin-bottom: 30px;
 }
+.text_head_new{
+    line-height: 1.2;
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: 900;
+    color: #000;
+}
 .btn{
     border-width: 2px;
     background: #00d2b5;
@@ -54,7 +61,7 @@ h1, h2, h3, h4, h5,
     font-size: 40px;
     font-weight: 900;
 }
-.card{
+.c_1{
     border: none;
     height: 250px;
 }
@@ -85,6 +92,8 @@ h1, h2, h3, h4, h5,
 }
 .card:hover{
     background-color: #00d2b5;
+    transform: translateY(-.5rem);
+    transition: 5s ease-in-out;
 }
 .card:hover span{
     background-color: #fff;
@@ -98,14 +107,89 @@ h1, h2, h3, h4, h5,
 .card:hover h3{
     color: #fff;
 }
-.circle_span span{
+.circle_span 
+{
     color: #fff;
     border-radius: 50%;
     background-color: #00d2b5;
+    max-height: 50px;
+}
+.line{
+    height: 40px;
+}
+.line hr{
+    border-top: 3px solid #00d2b5;
+    width: 100%;
+    background-color: transparent;
+    opacity: 1;
+    padding-top: 2px;
+}
+.curve-left{
+    border-left: 3px solid #00d2b5;
+    border-bottom: 3px solid #00d2b5;
+    
+    width: 100px;
+    height: 100%;
+    top: -50%;
+    left: 50%;
+    position: relative;
+    border-bottom-left-radius: 15px;
+}
+.h_line{
+    height: 20.2px;
+    top: 20px;
+    border-bottom: 3px solid #00d2b5;
+    background-color: #fff;
+}
+.curve-right{
+    border-right: 3px solid #00d2b5;
+    border-top: 3px solid #00d2b5;
+    width: 100%;
+    position: relative;
+    height: 100%;
+    right: 50%;
+    bottom: -44%;
+    border-top-right-radius: 15px;
+}
+.curve2-left{
+    border-left: 3px solid #00d2b5;
+    border-top: 3px solid #00d2b5;
+    width: 100px;
+    height: 100%;
+    top: 44%;
+    left: 50%;
+    position: relative;
+    border-top-left-radius: 15px;
+}
+.h2_line{
+    height: 20.2px;
+    top: 20px;
+    border-bottom: 3px solid #00d2b5;
+    background-color: #fff;
+}
+.curve2-right{
+    border-right: 3px solid #00d2b5;
+    border-bottom: 3px solid #00d2b5;
+    width: 100%;
+    height: 100%;
+    top: -50%;
+    left: -50%;
+    position: relative;
+    border-bottom-right-radius: 15px;
+}
+.c_2{
+    border: none;
+    height: 127px
 }
 @media (min-width: 1400px){
 
     .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
         max-width: 1140px;
+    }
+}
+@media (max-width: 991.98px){
+    
+    .text_head_new {
+        font-size: 30px;
     }
 }
