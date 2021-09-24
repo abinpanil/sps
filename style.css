@@ -192,26 +192,41 @@ h1, h2, h3, h4, h5,
 }
 .messages{
     width: 100%;
-    height: 90%;
+    height: 500px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-right: 11px;
 }
-.message_right span{
+.message_right .mess span{
     color: #fff;
     font-size: 16px;
 }
 
-.message_left span{
+.message_left .mess span{
     color: #000;
     font-size: 16px;
 }
-
 .message_right{
+    float: right;
+    position: relative;
+    z-index: 2;
+}
+.message_right .mess{
     width: fit-content;
     background-color: #00d2b5;
     float: right;
     border-radius: 20px;
     position: relative;
 }
-.message_right::before{
+.message_right .mess:hover{
+    transform: translateY(0.7rem);
+    transition: all 0.5s;
+}
+.message_left .mess:hover{
+    transform: translateY(0.7rem);
+    transition: all 0.5s;
+}
+.message_right .mess::before{
     content: " ";
     bottom: -2px;
     right: -5px;
@@ -220,7 +235,7 @@ h1, h2, h3, h4, h5,
     border-bottom-left-radius: 24px;
     z-index: -1;
 }
-.message_right::after{
+.message_right .mess::after{
     content: " ";
     bottom: -7px;
     right: -22px;
@@ -229,7 +244,7 @@ h1, h2, h3, h4, h5,
     border-bottom-left-radius: 43px;
     z-index: -1;
 }
-.message_left::before{
+.message_left .mess::before{
     content: " ";
     position: absolute;
     left: -11px;
@@ -238,7 +253,7 @@ h1, h2, h3, h4, h5,
     z-index: -1;
     border-bottom-right-radius: 47px;
 }
-.message_left::after{
+.message_left .mess::after{
     content: " ";
     position: absolute;
     left: -4px;
@@ -248,7 +263,7 @@ h1, h2, h3, h4, h5,
     border-bottom-right-radius: 21px;
 }
 
-.message_left{
+.message_left .mess{
     position: relative;
     width: fit-content;
     background-color: #E5E5EA;
