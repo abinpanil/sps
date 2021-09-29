@@ -409,10 +409,22 @@ h1, h2, h3, h4, h5,
 @media (max-width: 991.98px){
     
     .text_head_new {
-        font-size: 30px;
+        font-size: 30px !important;
+    }
+}
+@media(max-width:600px) {
+    h2 {
+        font-size: 25px !important;
+    }
+    h3 {
+        font-size: 20px !important;
     }
 }
 
+
+body::-webkit-scrollbar{
+    display: none;
+}
 
 #img-video-one{
     display: block;
